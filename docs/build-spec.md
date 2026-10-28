@@ -40,7 +40,7 @@ Aturan: satu milestone aktif pada satu waktu. Milestone baru hanya dibuka setela
 `200` `application/json`
 ```json
 [
-  { "id": "ARS", "name": "Arsenal", "attackStrength": 2.1, "defenseStrength": 0.8 }
+  { "id": "ARS", "name": "Arsenal", "attackStrength": 1.40, "defenseStrength": 0.65 }
 ]
 ```
 | Field | Tipe | Keterangan |
