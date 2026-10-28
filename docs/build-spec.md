@@ -50,6 +50,11 @@ Aturan: satu milestone aktif pada satu waktu. Milestone baru hanya dibuka setela
 | attackStrength | Float | Rata-rata kekuatan serangan (>= 0) |
 | defenseStrength | Float | Rata-rata kekuatan pertahanan (>= 0) |
 
+**Skala metrik:**
+- `attackStrength` = gol dicetak per laga tim ÷ rata-rata liga. 1.0 = rata-rata; makin tinggi makin tajam.
+- `defenseStrength` = gol kebobolan per laga tim ÷ rata-rata liga. 1.0 = rata-rata; **makin rendah makin kuat**.
+- Rentang wajar: 0.4 – 2.0.
+
 Error: `404` jika sumber data tidak ditemukan; `500` untuk error tak terduga (body JSON `{ "error": "..." }`).
 
 Rencana (M2+, tidak boleh dibuat sebelum dibuka): `GET /api/teams/{id}`.
