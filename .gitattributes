@@ -1,0 +1,7 @@
+   * text=auto
+   *.bat text eol=crlf
+   kotlin text eol=lf
+   *.kt text eol=lf
+   *.md text eol=lf
+   *.json text eol=lf
+   *.yaml text eol=lf
