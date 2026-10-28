@@ -6,16 +6,28 @@
     "defenseStrength": 0.65
   },
   {
-    "id": "MCI",
-    "name": "Manchester City",
-    "attackStrength": 1.55,
-    "defenseStrength": 0.70
+    "id": "AVL",
+    "name": "Aston Villa",
+    "attackStrength": 1.10,
+    "defenseStrength": 0.95
   },
   {
-    "id": "LIV",
-    "name": "Liverpool",
-    "attackStrength": 1.50,
-    "defenseStrength": 0.75
+    "id": "BOU",
+    "name": "AFC Bournemouth",
+    "attackStrength": 1.10,
+    "defenseStrength": 1.05
+  },
+  {
+    "id": "BRE",
+    "name": "Brentford",
+    "attackStrength": 1.10,
+    "defenseStrength": 1.10
+  },
+  {
+    "id": "BHA",
+    "name": "Brighton & Hove Albion",
+    "attackStrength": 1.05,
+    "defenseStrength": 1.00
   },
   {
     "id": "CHE",
@@ -24,15 +36,87 @@
     "defenseStrength": 1.10
   },
   {
-    "id": "TOT",
-    "name": "Tottenham Hotspur",
-    "attackStrength": 1.20,
+    "id": "COV",
+    "name": "Coventry City",
+    "attackStrength": 0.85,
+    "defenseStrength": 1.15
+  },
+  {
+    "id": "CRY",
+    "name": "Crystal Palace",
+    "attackStrength": 0.95,
+    "defenseStrength": 0.95
+  },
+  {
+    "id": "EVE",
+    "name": "Everton",
+    "attackStrength": 0.85,
+    "defenseStrength": 0.95
+  },
+  {
+    "id": "FUL",
+    "name": "Fulham",
+    "attackStrength": 1.00,
+    "defenseStrength": 1.10
+  },
+  {
+    "id": "HUL",
+    "name": "Hull City",
+    "attackStrength": 0.70,
     "defenseStrength": 1.25
+  },
+  {
+    "id": "IPS",
+    "name": "Ipswich Town",
+    "attackStrength": 0.80,
+    "defenseStrength": 1.20
+  },
+  {
+    "id": "LEE",
+    "name": "Leeds United",
+    "attackStrength": 0.95,
+    "defenseStrength": 1.10
+  },
+  {
+    "id": "LIV",
+    "name": "Liverpool",
+    "attackStrength": 1.50,
+    "defenseStrength": 0.75
+  },
+  {
+    "id": "MCI",
+    "name": "Manchester City",
+    "attackStrength": 1.55,
+    "defenseStrength": 0.70
   },
   {
     "id": "MUN",
     "name": "Manchester United",
     "attackStrength": 1.05,
     "defenseStrength": 1.20
+  },
+  {
+    "id": "NEW",
+    "name": "Newcastle United",
+    "attackStrength": 1.15,
+    "defenseStrength": 0.95
+  },
+  {
+    "id": "NFO",
+    "name": "Nottingham Forest",
+    "attackStrength": 0.90,
+    "defenseStrength": 1.00
+  },
+  {
+    "id": "SUN",
+    "name": "Sunderland",
+    "attackStrength": 0.80,
+    "defenseStrength": 1.00
+  },
+  {
+    "id": "TOT",
+    "name": "Tottenham Hotspur",
+    "attackStrength": 1.20,
+    "defenseStrength": 1.25
   }
 ]
