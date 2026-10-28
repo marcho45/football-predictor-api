@@ -1,4 +1,4 @@
-package com.example
+package com.portfolio.footballpredictor
 
 import io.ktor.client.request.get
 import io.ktor.http.HttpStatusCode

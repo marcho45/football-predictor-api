@@ -1,12 +1,19 @@
-package com.example
+package com.portfolio.footballpredictor
 
-import io.ktor.server.application.*
 import io.ktor.serialization.kotlinx.json.*
+import io.ktor.server.application.*
 import io.ktor.server.plugins.contentnegotiation.*
-import io.ktor.server.plugins.contentnegotiation.ContentNegotiation
+import kotlinx.serialization.json.Json
 
+/**
+ * Mengonfigurasi ContentNegotiation menggunakan kotlinx.serialization JSON.
+ */
 fun Application.configureSerialization() {
     install(ContentNegotiation) {
-        json()
+        json(Json {
+            prettyPrint = true
+            isLenient = true
+            ignoreUnknownKeys = true
+        })
     }
 }

@@ -12,6 +12,18 @@
 
 ---
 
+### 2026-10-29 — [chore] rename package
+- Yang diubah: src/main.kt, src/Routing.kt, src/Serialization.kt, src/model/Team.kt, test/ServerTest.kt, resources/application.yaml
+- Ringkasan: Mengubah package dari com.example menjadi com.portfolio.footballpredictor di seluruh file Kotlin dan konfigurasi application.yaml.
+- Gate: build ✅ · test ✅
+- Catatan/keputusan: Server dijalankan dengan kotlin.bat run dan endpoint http://localhost:8080/ terbukti merespons status 200 "Hello, World!".
+
+### 2026-10-29 — [M1b] Team data class dan konfigurasi ContentNegotiation JSON
+- Yang diubah: src/model/Team.kt, src/Serialization.kt, docs/plan/m1-mock-api.md
+- Ringkasan: Membuat data class Team dengan anotasi @Serializable sesuai kontrak build-spec §5 dan memastikan plugin ContentNegotiation terkonfigurasi dengan opsi kotlinx.serialization JSON.
+- Gate: build ✅ · test ✅
+- Catatan/keputusan: Struktur model diletakkan pada package com.example.model mengikuti target project-structure.md.
+
 ### 2026-10-29 — [M1a] Pembuatan mock EPL stats JSON
 - Yang diubah: resources/mock_epl_stats.json, docs/plan/m1-mock-api.md
 - Ringkasan: Menambahkan file mock_epl_stats.json berisi 6 tim EPL sesuai kontrak build-spec §5 dengan kode 3 huruf unik dan metrik attack/defense strength dalam rentang wajar (0.4 - 2.0).
