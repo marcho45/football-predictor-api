@@ -1,0 +1,23 @@
+# Build output
+build/
+out/
+.kotlin/
+.gradle/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Secrets (JANGAN pernah di-commit)
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Log
+*.log
+logs/
