@@ -30,18 +30,19 @@ class MockTeamRepositoryTest {
     }
 
     @Test
-    fun `negative defenseStrength is rejected`() {
+    fun `negative attackStrength is rejected`() {
         val error = assertFailsWith<IllegalArgumentException> {
-            MockTeamRepository.parseAndValidate(list(team("AAA", def = "-1.0")))
+            MockTeamRepository.parseAndValidate(list(team("AAA", atk = "-0.5")))
         }
         assertTrue(error.message!!.contains("AAA"))
     }
 
     @Test
     fun `negative defenseStrength is rejected`() {
-        assertFailsWith<IllegalArgumentException> {
+        val error = assertFailsWith<IllegalArgumentException> {
             MockTeamRepository.parseAndValidate(list(team("AAA", def = "-1.0")))
         }
+        assertTrue(error.message!!.contains("AAA"))
     }
 
     @Test
@@ -62,6 +63,6 @@ class MockTeamRepositoryTest {
 
     @Test
     fun `real mock file loads and passes validation`() {
-        MockTeamRepository() // tidak boleh melempar exception
+        MockTeamRepository()
     }
 }
