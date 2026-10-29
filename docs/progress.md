@@ -12,6 +12,12 @@
 
 ---
 
+### 2026-10-30 — [M1c] TeamRepository dan MockTeamRepository
+- Yang diubah: src/repository/TeamRepository.kt, src/repository/MockTeamRepository.kt, docs/plan/m1-mock-api.md
+- Ringkasan: Membuat interface TeamRepository dan implementasi MockTeamRepository yang memuat data dari mock_epl_stats.json di classpath menggunakan parser Json ketat dan memvalidasi keunikan id serta nilai attack/defense strength >= 0.
+- Gate: build ✅ · test ✅
+- Catatan/keputusan: MockTeamRepository mendukung parsing instance Json ketat (tanpa isLenient) dan melempar IllegalArgumentException dengan id tim bila terjadi duplikasi atau nilai negatif, serta FileNotFoundException jika resource tidak ditemukan.
+
 ### 2026-10-29 — [chore] rename package
 - Yang diubah: src/main.kt, src/Routing.kt, src/Serialization.kt, src/model/Team.kt, test/ServerTest.kt, resources/application.yaml
 - Ringkasan: Mengubah package dari com.example menjadi com.portfolio.footballpredictor di seluruh file Kotlin dan konfigurasi application.yaml.
