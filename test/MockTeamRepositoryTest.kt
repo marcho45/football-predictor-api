@@ -30,9 +30,9 @@ class MockTeamRepositoryTest {
     }
 
     @Test
-    fun `negative attackStrength is rejected`() {
+    fun `negative defenseStrength is rejected`() {
         val error = assertFailsWith<IllegalArgumentException> {
-            MockTeamRepository.parseAndValidate(list(team("AAA", atk = "-0.5")))
+            MockTeamRepository.parseAndValidate(list(team("AAA", def = "-1.0")))
         }
         assertTrue(error.message!!.contains("AAA"))
     }

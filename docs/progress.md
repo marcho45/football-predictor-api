@@ -12,6 +12,12 @@
 
 ---
 
+### 2026-10-30 — [M1e] Suite pengujian otomatis (ServerTest, TeamsApiTest, MockTeamRepositoryTest)
+- Yang diubah: test/ServerTest.kt, test/TeamsApiTest.kt, test/MockTeamRepositoryTest.kt, src/Routing.kt, docs/plan/m1-mock-api.md
+- Ringkasan: Menambahkan suite pengujian komprehensif (14 test) mencakup root endpoint, routing /api/teams (happy path, jumlah >= 6 tim, validasi nilai metrik), pemetaan HTTP 404/500, serta pengujian ketat validasi integritas data MockTeamRepository.
+- Gate: build ✅ · test ✅ (14 passed)
+- Catatan/keputusan: Dikerjakan manual oleh pengguna, diverifikasi AI. Slice M1f ditunda sampai aplikasi Android siap.
+
 ### 2026-10-30 — [M1d] TeamService dan endpoint GET /api/teams
 - Yang diubah: src/service/TeamService.kt, src/Routing.kt, src/repository/TeamRepository.kt, src/repository/MockTeamRepository.kt, docs/plan/m1-mock-api.md
 - Ringkasan: Menambahkan TeamService dan endpoint GET /api/teams dengan respons JSON serta penanganan status HTTP 404 (FileNotFoundException) dan 500 (Exception) berformat JSON ErrorResponse, serta memperbarui respons GET / menjadi "Football Predictor API is running!".
