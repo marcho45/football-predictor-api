@@ -10,7 +10,7 @@ Tidak boleh: database, internet, API eksternal.
 | M1a | `../../resources/mock_epl_stats.json` — minimal 6 tim EPL (id, name, attackStrength, defenseStrength) | [x] |
 | M1b | `Team` data class `@Serializable` + konfigurasi ContentNegotiation JSON | [x] |
 | M1c | `TeamRepository` (interface) + `MockTeamRepository` yang membaca JSON dari resources | [x] |
-| M1d | `TeamService` + route `GET /api/teams` (200 JSON, 404/500 sesuai kontrak) | [ ] |
+| M1d | `TeamService` + route `GET /api/teams` (200 JSON, 404/500 sesuai kontrak) | [x] |
 | M1e | Test: happy path `/api/teams` (jumlah & field), error saat file hilang | [ ] |
 | M1f | Uji dari Android Emulator (`http://10.0.2.2:8080/api/teams`) lalu dokumentasikan di `setup.md` | [ ] |
 

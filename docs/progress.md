@@ -12,6 +12,12 @@
 
 ---
 
+### 2026-10-30 — [M1d] TeamService dan endpoint GET /api/teams
+- Yang diubah: src/service/TeamService.kt, src/Routing.kt, src/repository/TeamRepository.kt, src/repository/MockTeamRepository.kt, docs/plan/m1-mock-api.md
+- Ringkasan: Menambahkan TeamService dan endpoint GET /api/teams dengan respons JSON serta penanganan status HTTP 404 (FileNotFoundException) dan 500 (Exception) berformat JSON ErrorResponse, serta memperbarui respons GET / menjadi "Football Predictor API is running!".
+- Gate: build ✅ · test ✅
+- Catatan/keputusan: Dikerjakan manual oleh pengguna, diverifikasi AI.
+
 ### 2026-10-30 — [M1c] TeamRepository dan MockTeamRepository
 - Yang diubah: src/repository/TeamRepository.kt, src/repository/MockTeamRepository.kt, docs/plan/m1-mock-api.md
 - Ringkasan: Membuat interface TeamRepository dan implementasi MockTeamRepository yang memuat data dari mock_epl_stats.json di classpath menggunakan parser Json ketat dan memvalidasi keunikan id serta nilai attack/defense strength >= 0.
